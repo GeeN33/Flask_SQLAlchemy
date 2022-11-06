@@ -1,0 +1,19 @@
+{% extends "index.html" %}
+
+{% block content %}
+
+<form action="/add_news" method="post">
+     {{ form.hidden_tag() }}
+     <label>News:</label>
+      <br>
+      {{ form.name }}
+     <br>
+     {{ form.textf }}
+      <br>
+     {{ form.category_id }}
+      <br>
+     {{ form.submit }}
+
+</form>
+
+{% endblock %}

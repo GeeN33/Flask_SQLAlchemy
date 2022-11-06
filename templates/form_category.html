@@ -1,0 +1,15 @@
+{% extends "index.html" %}
+
+{% block content %}
+
+<form action="/add_category" method="post">
+     {{ form.hidden_tag() }}
+     <label>Category:</label>
+      <br>
+     {{ form.textf }}
+      <br>
+     {{ form.submit }}
+
+</form>
+
+{% endblock %}

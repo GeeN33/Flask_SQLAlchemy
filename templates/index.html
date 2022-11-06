@@ -1,0 +1,23 @@
+<head>
+    <meta charset="UTF-8">
+    <title>Peewee в Flask</title>
+</head>
+<body>
+<div>
+    <ul>
+  <li><a href="/form_category">category</a></li>
+  <li>-------</li>
+  <li><a href="/form_news">news</a></li>
+</ul>
+</div>
+
+<div>
+   {% for new in list_new %}
+    <p>{{ new[0] }}</p>
+    <p>{{ new[1] }}</p>
+    <br>
+{% endfor %}
+</div>
+{% block content %} {% endblock %}
+</body>
+</html>
